@@ -1,0 +1,710 @@
+{
+  "welcome": {
+    "message": "Welcome to Arca.\n\nYou made it. The island is outside your window, the water is warm, and everything you need is right here.\n\nThis is your guide to making the most of your time with us — from what's on the menu tonight to what's happening on the reef tomorrow. Flip through at your own pace. We're here whenever you need us.",
+    "backgroundImage": "https://arcaroatan.com/wp-content/uploads/2024/10/Beachfront-Junior-Suite-King-Bed-Arca-Roatan-Boutique-Hotel-West-Bay.jpg"
+  },
+  "dining": {
+    "hours": {
+      "breakfast": "7:00 AM – 10:00 AM",
+      "lunchDinner": "11:00 AM – 9:00 PM"
+    },
+    "categories": [
+      {
+        "id": "breakfast",
+        "title": "Breakfast",
+        "sections": [
+          {
+            "id": "coffee",
+            "title": "Coffee",
+            "items": [
+              {
+                "id": "espresso",
+                "name": "Espresso",
+                "description": "Single origin, locally roasted",
+                "price": 4
+              },
+              {
+                "id": "americano",
+                "name": "Americano",
+                "description": "Espresso with hot water",
+                "price": 5
+              },
+              {
+                "id": "cappuccino",
+                "name": "Cappuccino",
+                "description": "Espresso, steamed milk, foam",
+                "price": 6
+              },
+              {
+                "id": "pour-over",
+                "name": "Pour Over",
+                "description": "Chef's daily selection",
+                "price": 6
+              }
+            ]
+          },
+          {
+            "id": "cold-press",
+            "title": "Cold Press Juice",
+            "items": [
+              {
+                "id": "green-glow",
+                "name": "Green Glow",
+                "description": "Cucumber, celery, apple, ginger, lime",
+                "price": 9
+              },
+              {
+                "id": "tropical-sunrise",
+                "name": "Tropical Sunrise",
+                "description": "Pineapple, mango, orange, turmeric",
+                "price": 9
+              },
+              {
+                "id": "beet-root-revival",
+                "name": "Beet Root Revival",
+                "description": "Beet, carrot, apple, lemon",
+                "price": 9
+              }
+            ]
+          },
+          {
+            "id": "fresh-essentials",
+            "title": "Fresh Essentials",
+            "items": [
+              {
+                "id": "pineapple-agua-fresca",
+                "name": "Pineapple Agua Fresca",
+                "description": "House-made, lightly sweetened",
+                "price": 6
+              },
+              {
+                "id": "watermelon-mint",
+                "name": "Watermelon Mint",
+                "description": "Seasonal when available",
+                "price": 6
+              },
+              {
+                "id": "hibiscus-cooler",
+                "name": "Hibiscus Cooler",
+                "description": "Tart and refreshing",
+                "price": 6
+              }
+            ]
+          },
+          {
+            "id": "tea",
+            "title": "Tea",
+            "items": [
+              {
+                "id": "english-breakfast",
+                "name": "English Breakfast",
+                "description": "Classic black tea",
+                "price": 5
+              },
+              {
+                "id": "chamomile",
+                "name": "Chamomile",
+                "description": "Organic herbal blend",
+                "price": 5
+              },
+              {
+                "id": "island-ginger-turmeric",
+                "name": "Island Ginger Turmeric",
+                "description": "Warming and restorative",
+                "price": 6
+              }
+            ]
+          },
+          {
+            "id": "vacation-mode",
+            "title": "Vacation Mode",
+            "items": [
+              {
+                "id": "mimosa",
+                "name": "Mimosa",
+                "description": "Prosecco and fresh orange juice",
+                "price": 12
+              },
+              {
+                "id": "island-bellini",
+                "name": "Island Bellini",
+                "description": "Prosecco and passion fruit purée",
+                "price": 13
+              },
+              {
+                "id": "bloody-mary",
+                "name": "Bloody Mary",
+                "description": "House mix, celery, lime",
+                "price": 14
+              }
+            ]
+          },
+          {
+            "id": "signature-breakfast",
+            "title": "Signature Dishes",
+            "items": [
+              {
+                "id": "ahari-breakfast-bowl",
+                "name": "Ahari Breakfast Bowl",
+                "description": "Quinoa, avocado, poached egg, pickled onion, tropical salsa",
+                "price": 18
+              },
+              {
+                "id": "catch-of-the-morning",
+                "name": "Catch of the Morning",
+                "description": "Grilled local fish, plantains, black beans, cilantro lime",
+                "price": 22
+              },
+              {
+                "id": "tropical-french-toast",
+                "name": "Tropical French Toast",
+                "description": "Brioche, coconut cream, caramelized banana, rum syrup",
+                "price": 16
+              }
+            ]
+          },
+          {
+            "id": "build-your-own",
+            "title": "Build Your Own Breakfast",
+            "items": [
+              {
+                "id": "two-eggs-any-style",
+                "name": "Two Eggs Any Style",
+                "description": "Served with toast and fruit",
+                "price": 12
+              },
+              {
+                "id": "add-avocado",
+                "name": "Add Avocado",
+                "description": "",
+                "price": 4
+              },
+              {
+                "id": "add-bacon-or-sausage",
+                "name": "Add Bacon or Sausage",
+                "description": "",
+                "price": 5
+              },
+              {
+                "id": "add-fresh-fruit-plate",
+                "name": "Add Fresh Fruit Plate",
+                "description": "",
+                "price": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lunch-dinner",
+        "title": "Lunch & Dinner",
+        "sections": [
+          {
+            "id": "casual-corner",
+            "title": "Casual Corner",
+            "items": [
+              {
+                "id": "fish-tacos",
+                "name": "Fish Tacos",
+                "description": "Grilled catch, cabbage slaw, chipotle crema, flour tortillas",
+                "price": 18
+              },
+              {
+                "id": "ahari-burger",
+                "name": "Ahari Burger",
+                "description": "Angus beef, aged cheddar, pickled onion, fries",
+                "price": 22
+              },
+              {
+                "id": "caesar-salad",
+                "name": "Caesar Salad",
+                "description": "Romaine, parmesan, house croutons, lemon anchovy dressing",
+                "price": 14
+              }
+            ]
+          },
+          {
+            "id": "from-the-land",
+            "title": "From the Land",
+            "items": [
+              {
+                "id": "grilled-ribeye",
+                "name": "Grilled Ribeye",
+                "description": "8 oz, herb butter, roasted vegetables, chimichurri",
+                "price": 38
+              },
+              {
+                "id": "chicken-mole",
+                "name": "Chicken Mole",
+                "description": "Free-range chicken, Honduran chocolate mole, rice, plantains",
+                "price": 26
+              },
+              {
+                "id": "vegetable-curry",
+                "name": "Vegetable Curry",
+                "description": "Coconut curry, seasonal vegetables, jasmine rice",
+                "price": 22
+              }
+            ]
+          },
+          {
+            "id": "from-the-sea",
+            "title": "Signature From the Sea",
+            "items": [
+              {
+                "id": "whole-grilled-snapper",
+                "name": "Whole Grilled Snapper",
+                "description": "Local catch, garlic butter, lime, coconut rice",
+                "price": 34
+              },
+              {
+                "id": "lobster-tail",
+                "name": "Lobster Tail",
+                "description": "Broiled, drawn butter, seasonal sides",
+                "price": 48
+              },
+              {
+                "id": "ceviche-ahari",
+                "name": "Ceviche Ahari",
+                "description": "Fresh fish, lime, red onion, cilantro, plantain chips",
+                "price": 19
+              }
+            ]
+          },
+          {
+            "id": "sides",
+            "title": "Sides",
+            "items": [
+              {
+                "id": "coconut-rice",
+                "name": "Coconut Rice",
+                "description": "",
+                "price": 6
+              },
+              {
+                "id": "grilled-vegetables",
+                "name": "Grilled Vegetables",
+                "description": "",
+                "price": 7
+              },
+              {
+                "id": "plantain-chips",
+                "name": "Plantain Chips",
+                "description": "Garlic aioli",
+                "price": 8
+              },
+              {
+                "id": "black-beans",
+                "name": "Black Beans",
+                "description": "Slow-cooked with spices",
+                "price": 5
+              }
+            ]
+          },
+          {
+            "id": "dessert",
+            "title": "Dessert",
+            "items": [
+              {
+                "id": "key-lime-pie",
+                "name": "Key Lime Pie",
+                "description": "Graham cracker crust, whipped cream",
+                "price": 10
+              },
+              {
+                "id": "chocolate-lava-cake",
+                "name": "Chocolate Lava Cake",
+                "description": "Vanilla bean ice cream",
+                "price": 12
+              },
+              {
+                "id": "tropical-sorbet",
+                "name": "Tropical Sorbet",
+                "description": "Chef's selection of island fruits",
+                "price": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "drinks",
+        "title": "Drinks",
+        "sections": [
+          {
+            "id": "house-cocktails",
+            "title": "House Cocktails",
+            "items": [
+              {
+                "id": "west-bay-sunset",
+                "name": "West Bay Sunset",
+                "description": "Rum, passion fruit, lime, bitters",
+                "price": 14
+              },
+              {
+                "id": "reef-runner",
+                "name": "Reef Runner",
+                "description": "Tequila, grapefruit, agave, sea salt",
+                "price": 15
+              },
+              {
+                "id": "garifuna-gold",
+                "name": "Garifuna Gold",
+                "description": "Rum, coconut, pineapple, cinnamon",
+                "price": 14
+              }
+            ]
+          },
+          {
+            "id": "classic-cocktails",
+            "title": "Classic Cocktails",
+            "items": [
+              {
+                "id": "margarita",
+                "name": "Margarita",
+                "description": "Silver tequila, lime, triple sec",
+                "price": 13
+              },
+              {
+                "id": "old-fashioned",
+                "name": "Old Fashioned",
+                "description": "Bourbon, bitters, orange",
+                "price": 14
+              },
+              {
+                "id": "mojito",
+                "name": "Mojito",
+                "description": "White rum, mint, lime, soda",
+                "price": 13
+              }
+            ]
+          },
+          {
+            "id": "non-alcoholic",
+            "title": "Non-Alcoholic",
+            "items": [
+              {
+                "id": "virgin-pia-colada",
+                "name": "Virgin Piña Colada",
+                "description": "Coconut cream, pineapple",
+                "price": 8
+              },
+              {
+                "id": "sparkling-water",
+                "name": "Sparkling Water",
+                "description": "San Pellegrino",
+                "price": 5
+              },
+              {
+                "id": "fresh-coconut-water",
+                "name": "Fresh Coconut Water",
+                "description": "Served in shell when available",
+                "price": 7
+              }
+            ]
+          },
+          {
+            "id": "craft-beer",
+            "title": "Craft Beer",
+            "items": [
+              {
+                "id": "roatan-island-brewing-co",
+                "name": "Roatan Island Brewing Co.",
+                "description": "Rotating local draft",
+                "price": 8
+              },
+              {
+                "id": "seasonal-ipa",
+                "name": "Seasonal IPA",
+                "description": "Ask your server for today's tap",
+                "price": 9
+              }
+            ]
+          },
+          {
+            "id": "beer",
+            "title": "Beer",
+            "items": [
+              {
+                "id": "salva-vida",
+                "name": "Salva Vida",
+                "description": "Honduran lager",
+                "price": 6
+              },
+              {
+                "id": "imperial",
+                "name": "Imperial",
+                "description": "Light lager",
+                "price": 6
+              },
+              {
+                "id": "corona",
+                "name": "Corona",
+                "description": "Imported",
+                "price": 7
+              }
+            ]
+          },
+          {
+            "id": "house-wines",
+            "title": "House Wines",
+            "items": [
+              {
+                "id": "house-white",
+                "name": "House White",
+                "description": "Glass / Bottle",
+                "price": 10
+              },
+              {
+                "id": "house-red",
+                "name": "House Red",
+                "description": "Glass / Bottle",
+                "price": 10
+              },
+              {
+                "id": "ros",
+                "name": "Rosé",
+                "description": "Glass / Bottle",
+                "price": 11
+              }
+            ]
+          },
+          {
+            "id": "ahari-select-wines",
+            "title": "Ahari Select Wines",
+            "items": [
+              {
+                "id": "sauvignon-blanc",
+                "name": "Sauvignon Blanc",
+                "description": "New Zealand — Glass / Bottle",
+                "price": 14
+              },
+              {
+                "id": "malbec",
+                "name": "Malbec",
+                "description": "Argentina — Glass / Bottle",
+                "price": 14
+              },
+              {
+                "id": "prosecco",
+                "name": "Prosecco",
+                "description": "Italy — Glass / Bottle",
+                "price": 13
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "live-music-1",
+      "name": "Live Music at Ahari Beach Bar",
+      "day": "Wednesday",
+      "date": "May 21",
+      "time": "7:00 PM",
+      "description": "Acoustic sets overlooking the bay. Grab a cocktail and settle in.",
+      "location": "Ahari Beach Bar"
+    },
+    {
+      "id": "yoga",
+      "name": "Morning Yoga",
+      "day": "Thursday",
+      "date": "May 22",
+      "time": "8:00 AM",
+      "description": "Gentle flow for all levels. Mats provided.",
+      "location": "Pool Deck"
+    },
+    {
+      "id": "happy-hour",
+      "name": "Happy Hour — 2×1 Cocktails",
+      "day": "Friday",
+      "date": "May 23",
+      "time": "5:00 PM – 7:00 PM",
+      "description": "House cocktails and select wines. Twice the island, half the price.",
+      "location": "Ahari Beach Bar"
+    },
+    {
+      "id": "italian-night",
+      "name": "Italian Night",
+      "day": "Saturday",
+      "date": "May 24",
+      "time": "6:30 PM",
+      "description": "A themed evening menu inspired by the Mediterranean — reservations recommended.",
+      "location": "Ahari Restaurant"
+    }
+  ],
+  "island": {
+    "subsections": [
+      {
+        "id": "getting-around",
+        "title": "Getting Around",
+        "items": [
+          "Water taxis: West End ↔ West Bay, ~$5 per person",
+          "Colectivo (shared) taxis: available from the main road",
+          "Private driver: available through the front desk",
+          "Car rental: $55–$85/day",
+          "Airport/ferry transfer: $60/reservation (arrange through Arca)"
+        ]
+      },
+      {
+        "id": "money-payments",
+        "title": "Money & Payments",
+        "items": [
+          "USD and Honduran Lempiras (HNL) both accepted",
+          "Exchange rate: ~24.5 HNL per $1 USD",
+          "Not all places accept credit cards — carry cash",
+          "USD bills must be in pristine condition (no rips, tears, stains)",
+          "Government taxes: 15% sales tax, 18% alcohol tax, 4% tourism tax"
+        ]
+      },
+      {
+        "id": "staying-connected",
+        "title": "Staying Connected",
+        "items": [
+          "Wi-Fi: complimentary throughout property (password at front desk)",
+          "WhatsApp is the primary communication method on the island",
+          "Local SIM cards available at pulperías (small local stores)"
+        ]
+      },
+      {
+        "id": "water-sustainability",
+        "title": "Water & Sustainability",
+        "items": [
+          "No individual plastic water bottles sold at Arca",
+          "Free purified water refill stations available to all guests",
+          "Bring a reusable water bottle",
+          "Protect the reef: do not touch, stand on, or take anything from the reef"
+        ]
+      },
+      {
+        "id": "health-comfort",
+        "title": "Health & Comfort",
+        "items": [
+          "Strong UV rays — reef-safe sunscreen recommended",
+          "No-see-ums (tiny biting insects) — natural, oil-based bug repellent recommended",
+          "Purchase both before arriving on the island"
+        ]
+      },
+      {
+        "id": "hotel-essentials",
+        "title": "Hotel Essentials",
+        "items": [
+          "Check-in: 3:00 PM | Check-out: 11:00 AM",
+          "Early check-in / late check-out: subject to availability — leave luggage at reception",
+          "Lost room key fee: $40",
+          "Lost beach towel fee: $30",
+          "Snorkel gear rental: $15/day | $70/week (at front desk)"
+        ]
+      },
+      {
+        "id": "house-rules",
+        "title": "House Rules",
+        "items": [
+          "Smoking permitted in the open-air bar only — not in rooms or on terraces",
+          "Outside massages, hair braiding, and beach vendors are not permitted on property — Arca can arrange private services",
+          "Pool and facilities for registered guests only",
+          "Respectful behavior expected at all times",
+          "Please use the trash bins provided in the bathroom (local plumbing)"
+        ]
+      }
+    ]
+  },
+  "tours": {
+    "snorkelingNote": "Gear rental available at Arca front desk ($15/day, $70/week). Guided snorkel tours also available. Arca sits along the world's second largest barrier reef.",
+    "partners": [
+      {
+        "id": "west-bay-divers",
+        "name": "West Bay Divers",
+        "category": "Scuba Diving",
+        "description": "Next-door neighbors. Discover diving, certification, or fun dives. Boutique service.",
+        "details": "Book in advance via their website.",
+        "bookingNote": "Ask the front desk for the latest contact details.",
+        "recommendation": "Our closest dive shop — walk over in your flip-flops."
+      },
+      {
+        "id": "anthonys-key",
+        "name": "Anthony's Key Resort",
+        "category": "Dolphin Experience",
+        "description": "30-min meet & greet, 1-hr snorkel & swim, or trainer for a day.",
+        "details": "Reservations required.",
+        "bookingNote": "Arca can help arrange transport and reservations."
+      },
+      {
+        "id": "wahoo-slayer",
+        "name": "Wahoo Slayer",
+        "category": "Deep Sea Fishing",
+        "description": "Local, traditional experience with local fishermen.",
+        "details": "Pricing varies by season and group size.",
+        "bookingNote": "Contact through the front desk."
+      },
+      {
+        "id": "ruthless-charters",
+        "name": "Ruthless Charters",
+        "category": "Deep Sea Fishing",
+        "description": "Premium, upscale fishing excursion.",
+        "details": "Half-day and full-day charters available.",
+        "bookingNote": "Book in advance — popular in high season."
+      },
+      {
+        "id": "mangrove-tours",
+        "name": "Mangrove Tours (Jonesville)",
+        "category": "Nature / Eco",
+        "description": "\"Venice of Roatan.\" Kayak through winding mangrove channels.",
+        "details": "Departs from Jonesville via water taxi.",
+        "bookingNote": "Arca can arrange transport.",
+        "recommendation": "A peaceful half-day away from the beach crowds."
+      },
+      {
+        "id": "gumbalimba",
+        "name": "Gumbalimba Park",
+        "category": "Eco-Park / Wildlife",
+        "description": "Monkeys, parrots, botanical gardens. Guided tours available.",
+        "details": "Allow a half day for the full experience.",
+        "bookingNote": "Tickets available at the park or through Arca."
+      },
+      {
+        "id": "chocolate-factory",
+        "name": "Chocolate Factory",
+        "category": "Cultural Experience",
+        "description": "2-hour chocolate-making class using Honduran-grown cacao.",
+        "details": "Classes run on select days — reserve ahead.",
+        "bookingNote": "Ask reception for the current schedule."
+      },
+      {
+        "id": "kao-kamasa",
+        "name": "Kao Kamasa Spa",
+        "category": "Wellness / Spa",
+        "description": "Full spa treatments nearby.",
+        "details": "Massages, facials, and body treatments.",
+        "bookingNote": "Book in advance."
+      },
+      {
+        "id": "spa-baan-suerte",
+        "name": "Spa Baan Suerte",
+        "category": "Wellness / Spa",
+        "description": "Rustic spa experience in a jungle setting.",
+        "details": "In-room massage also available through Arca.",
+        "bookingNote": "Book in advance."
+      },
+      {
+        "id": "sundowners",
+        "name": "Sundowners (West End)",
+        "category": "Yoga",
+        "description": "Daily classes at 9:00 AM on the top floor.",
+        "details": "Private sessions available.",
+        "bookingNote": "Contact Arca to arrange private sessions."
+      },
+      {
+        "id": "roatan-brewing",
+        "name": "Roatan Island Brewing Co.",
+        "category": "Food & Drink",
+        "description": "Jungle brewery. Craft beers, kombucha, artisanal food.",
+        "details": "Open Wed–Sun. Family friendly.",
+        "bookingNote": "Taxi from West Bay ~15 minutes.",
+        "recommendation": "Worth the trip for the IPA alone."
+      }
+    ]
+  }
+}
