@@ -1,5 +1,7 @@
 # Arca Guest Portal
 
+<!-- redeploy trigger -->
+
 Mobile-first guest experience portal for [Arca, Roatán](https://www.arcaroatan.com). Guests scan a QR code in their room to browse in-room dining, weekly events, island tips, and curated excursions.
 
 Built with **Next.js 15** (App Router), **TypeScript**, and **Tailwind CSS**.
