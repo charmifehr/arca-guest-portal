@@ -60,40 +60,40 @@ export function WelcomeSection({ content, onNavigate }: WelcomeSectionProps) {
         </div>
       </div>
 
-      <div className="relative -mt-12 rounded-t-[2.25rem] bg-warm-gradient px-5 pb-8 pt-8 shadow-warm">
+      <div className="relative -mt-12 rounded-t-[2.25rem] bg-warm-gradient px-5 pb-6 pt-6 shadow-warm">
         <div className="mx-auto max-w-lg">
           <GarifunaBorder />
           <p
-            className="font-display text-2xl italic leading-tight text-charcoal"
+            className="font-display text-2xl italic leading-tight text-cream"
             dangerouslySetInnerHTML={{
               __html: formatRichText(paragraphs[0] ?? "Welcome to Arca."),
             }}
           />
-          <p className="mt-3 font-body text-sm leading-relaxed text-charcoal-muted">
+          <p className="mt-3 font-body text-sm leading-relaxed text-cream/80">
             This is your private companion for the days ahead — dining, island notes,
             happenings, and experiences chosen with care.
           </p>
 
-          <div className="mt-6 grid gap-3">
+          <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
             {guestNotes.map((note) => (
               <div
                 key={note.label}
-                className="rounded-2xl border border-sand/50 bg-cream/70 px-4 py-3 shadow-card"
+                className="rounded-2xl border border-cream/20 bg-charcoal/60 px-4 py-3 shadow-card"
               >
-                <p className="font-heading text-[9px] font-semibold uppercase tracking-caps text-terracotta">
+                <p className="font-heading text-[9px] font-semibold uppercase tracking-caps text-gold-light">
                   {note.label}
                 </p>
-                <p className="mt-1 font-heading text-sm font-medium text-charcoal">
+                <p className="mt-1 font-heading text-sm font-medium text-cream">
                   {note.value}
                 </p>
-                <p className="font-body text-xs italic text-charcoal-muted">
+                <p className="font-body text-xs italic text-cream/70">
                   {note.detail}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="mt-6 grid grid-cols-2 gap-3">
+          <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
             <button
               type="button"
               onClick={() => onNavigate?.("dining")}

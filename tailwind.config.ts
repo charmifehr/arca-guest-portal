@@ -63,7 +63,7 @@ const config: Config = {
       },
       backgroundImage: {
         "warm-gradient":
-          "linear-gradient(135deg, #F7F3ED 0%, #EDE6DC 50%, #E8E3DC 100%)",
+          "linear-gradient(135deg, #3D3632 0%, #2F2A27 50%, #2A2522 100%)",
         "hero-overlay":
           "linear-gradient(to top, rgba(42,37,34,0.92) 0%, rgba(42,37,34,0.45) 45%, rgba(42,37,34,0.15) 100%)",
         "section-overlay":
