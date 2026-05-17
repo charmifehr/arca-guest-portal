@@ -6,7 +6,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { TabNavigation } from "./TabNavigation";
 import { OfflineBanner } from "./OfflineBanner";
 import { Footer } from "./Footer";
-import { WhatsAppButton } from "./WhatsAppButton";
+import { NeedAnythingButton } from "./luxury/NeedAnythingButton";
+import { QuickActionsBar } from "./luxury/QuickActionsBar";
 import { WelcomeSection } from "./sections/WelcomeSection";
 import { DiningSection } from "./sections/DiningSection";
 import { EventsSection } from "./sections/EventsSection";
@@ -41,12 +42,12 @@ export function GuestPortal({ content }: GuestPortalProps) {
           id={`panel-${activeTab}`}
           role="tabpanel"
           aria-labelledby={`tab-${activeTab}`}
-          className="tab-panel-enter h-full overflow-y-auto overscroll-contain bg-cream"
+          className="tab-panel-enter h-full overflow-y-auto overscroll-contain bg-cream pb-36"
         >
           {activeTab === "landing" && (
             <WelcomeSection
               content={content.welcome}
-              onExplore={() => handleTabChange("dining")}
+              onNavigate={handleTabChange}
             />
           )}
           {activeTab === "dining" && (
@@ -78,7 +79,8 @@ export function GuestPortal({ content }: GuestPortalProps) {
         </div>
       </main>
 
-      {activeTab === "dining" && <WhatsAppButton variant="floating" />}
+      <NeedAnythingButton />
+      <QuickActionsBar activeTab={activeTab} onNavigate={handleTabChange} />
     </div>
   );
 }

@@ -7,6 +7,9 @@ export const MAIN_WEBSITE = "https://www.arcaroatan.com";
 
 export const WHATSAPP_ORDER_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_ORDER_MESSAGE)}`;
 export const SMS_ORDER_URL = `sms:${WHATSAPP_DISPLAY}?body=${encodeURIComponent(WHATSAPP_ORDER_MESSAGE)}`;
+export const WHATSAPP_CONCIERGE_MESSAGE =
+  "Hi Arca, I need a little help during my stay.";
+export const WHATSAPP_CONCIERGE_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_CONCIERGE_MESSAGE)}`;
 
 export const PORTAL_TABS = [
   { id: "landing", label: "Landing page" },

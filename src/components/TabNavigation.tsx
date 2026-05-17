@@ -9,18 +9,23 @@ interface TabNavigationProps {
 
 export function TabNavigation({ activeTab, onTabChange }: TabNavigationProps) {
   return (
-    <header className="shrink-0 border-b border-sand/60 bg-cream/95 shadow-sm backdrop-blur-md">
-      <div className="border-b border-sand/40 bg-warm-gradient px-4 py-3">
-        <p className="font-display text-xl font-light tracking-wide text-charcoal">
-          Arca
-        </p>
-        <p className="font-heading text-[10px] font-medium uppercase tracking-caps text-terracotta">
-          Roatán, Honduras
+    <header className="shrink-0 border-b border-sand/40 bg-cream/90 shadow-sm backdrop-blur-xl">
+      <div className="flex items-center justify-between border-b border-sand/30 bg-cream/70 px-4 py-2.5">
+        <div>
+          <p className="font-display text-2xl font-light leading-none tracking-wide text-charcoal">
+            Arca
+          </p>
+          <p className="font-heading text-[8px] font-medium uppercase tracking-caps text-terracotta">
+            Private guest portal
+          </p>
+        </div>
+        <p className="rounded-full border border-sand/60 px-3 py-1 font-heading text-[8px] uppercase tracking-wide text-charcoal-muted">
+          West Bay
         </p>
       </div>
 
       <nav
-        className="scrollbar-hide flex overflow-x-auto overscroll-x-contain bg-linen-light/80"
+        className="scrollbar-hide flex overflow-x-auto overscroll-x-contain bg-linen-light/70"
         aria-label="Portal sections"
         role="tablist"
       >
@@ -35,7 +40,7 @@ export function TabNavigation({ activeTab, onTabChange }: TabNavigationProps) {
               aria-selected={isActive}
               aria-controls={`panel-${tab.id}`}
               onClick={() => onTabChange(tab.id)}
-              className={`relative min-h-touch shrink-0 whitespace-nowrap px-3.5 py-3 font-heading text-[11px] transition-all sm:px-4 sm:text-xs ${
+              className={`relative min-h-touch shrink-0 whitespace-nowrap px-3.5 py-2.5 font-heading text-[10px] transition-all sm:px-4 sm:text-xs ${
                 isActive
                   ? "bg-cream font-semibold text-ocean-dark"
                   : "text-charcoal-muted hover:bg-cream/50 hover:text-charcoal"

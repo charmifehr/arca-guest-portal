@@ -19,7 +19,7 @@
   }
 
   .section-padding {
-    @apply px-4 py-6 sm:px-6 sm:py-8;
+    @apply px-5 py-8 sm:px-6 sm:py-10;
   }
 
   .display-title {
@@ -39,7 +39,15 @@
   }
 
   .card-warm {
-    @apply rounded-2xl border border-sand/50 bg-linen-light/90 shadow-card backdrop-blur-sm;
+    @apply rounded-[1.4rem] border border-sand/45 bg-linen-light/90 shadow-card backdrop-blur-sm;
+  }
+
+  .luxury-panel {
+    @apply rounded-[1.75rem] border border-sand/40 bg-cream/80 shadow-warm backdrop-blur-md;
+  }
+
+  .tap-lift {
+    @apply transition duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
   }
 }
 
@@ -61,6 +69,10 @@
     animation: tab-panel-in 0.32s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
+  .slow-zoom {
+    animation: slow-zoom 14s ease-out both;
+  }
+
   @keyframes tab-panel-in {
     from {
       opacity: 0;
@@ -69,6 +81,15 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes slow-zoom {
+    from {
+      transform: scale(1.03);
+    }
+    to {
+      transform: scale(1.08);
     }
   }
 

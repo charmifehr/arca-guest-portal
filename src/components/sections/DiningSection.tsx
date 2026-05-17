@@ -82,31 +82,45 @@ export function DiningSection({
         alt="Ahari restaurant — Caribbean fusion at Arca"
         eyebrow="In-room dining"
         title="Ahari"
-        subtitle="Caribbean fusion · room service to your door"
+        subtitle="Island flavors, sent quietly to your room"
       />
 
       <div className="section-padding mx-auto max-w-lg">
-        <div className="card-warm flex gap-4 px-4 py-3">
-          <div className="min-w-0 flex-1">
+        <div className="luxury-panel overflow-hidden">
+          <div className="border-b border-sand/40 px-4 py-4">
             <p className="font-heading text-[10px] font-semibold uppercase tracking-caps text-terracotta">
-              Hours
+              From Ahari
             </p>
-            <p className="mt-1 font-body text-xs text-charcoal">
-              <span className="font-medium">Breakfast</span> · {content.hours.breakfast}
+            <p className="mt-2 font-display text-2xl leading-tight text-charcoal">
+              Choose what sounds good. We will take care of the rest.
             </p>
-            <p className="font-body text-xs text-charcoal-muted">
-              <span className="font-medium">Lunch & Dinner</span> ·{" "}
-              {content.hours.lunchDinner}
-            </p>
+          </div>
+          <div className="grid grid-cols-2 divide-x divide-sand/40">
+            <div className="px-4 py-3">
+              <p className="font-heading text-[9px] uppercase tracking-wide text-charcoal-muted">
+                Breakfast
+              </p>
+              <p className="font-body text-xs italic text-charcoal">
+                {content.hours.breakfast}
+              </p>
+            </div>
+            <div className="px-4 py-3">
+              <p className="font-heading text-[9px] uppercase tracking-wide text-charcoal-muted">
+                Lunch & Dinner
+              </p>
+              <p className="font-body text-xs italic text-charcoal">
+                {content.hours.lunchDinner}
+              </p>
+            </div>
           </div>
         </div>
 
         <div className="mt-5 grid grid-cols-[6.5rem_1fr] gap-3">
           <aside
-            className="sticky top-3 self-start"
+            className="sticky top-4 self-start"
             aria-label="Dining menu sections"
           >
-            <div className="card-warm overflow-hidden p-1">
+            <div className="luxury-panel overflow-hidden p-1.5">
               {DINING_TABS.map((tab) => {
                 const isActive = activeMenuTab === tab.id;
                 return (
@@ -114,7 +128,7 @@ export function DiningSection({
                     key={tab.id}
                     type="button"
                     onClick={() => setActiveMenuTab(tab.id)}
-                    className={`min-h-touch w-full rounded-xl px-2 py-2 text-left font-heading text-[10px] uppercase leading-tight tracking-wide transition ${
+                    className={`min-h-touch w-full rounded-[1rem] px-2 py-2 text-left font-heading text-[9px] uppercase leading-tight tracking-wide transition ${
                       isActive
                         ? "bg-ocean text-cream shadow-card"
                         : "text-charcoal-muted hover:bg-sand/20 hover:text-charcoal"
@@ -128,6 +142,9 @@ export function DiningSection({
           </aside>
 
           <div className="min-w-0">
+            <p className="font-heading text-[9px] uppercase tracking-caps text-terracotta">
+              Menu
+            </p>
             <h3 className="font-display text-xl text-ocean-dark">
               {activeMenu.title}
             </h3>
@@ -143,7 +160,7 @@ export function DiningSection({
                   <h4 className="heading-caps mb-1 text-charcoal">
                     {section.title}
                   </h4>
-                  <ul className="card-warm divide-y divide-sand/50 px-3 py-1">
+                  <ul className="card-warm divide-y divide-sand/50 px-3 py-1.5">
                     {section.items.map((menuItem) => (
                       <li key={menuItem.id} className="menu-row">
                         <article
@@ -154,7 +171,7 @@ export function DiningSection({
                           <div className="flex items-start justify-between gap-2">
                             <div className="min-w-0 flex-1">
                               <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0">
-                                <h5 className="font-heading text-[13px] font-medium leading-snug text-charcoal">
+                                <h5 className="font-heading text-[12px] font-semibold leading-snug text-charcoal">
                                   {menuItem.name}
                                 </h5>
                                 {menuItem.unavailable ? (
@@ -164,12 +181,12 @@ export function DiningSection({
                                 ) : null}
                               </div>
                               {menuItem.description ? (
-                                <p className="mt-0.5 line-clamp-2 font-body text-[11px] leading-snug text-charcoal-muted">
+                                <p className="mt-0.5 line-clamp-2 font-body text-[10.5px] leading-snug text-charcoal-muted">
                                   {menuItem.description}
                                 </p>
                               ) : null}
                             </div>
-                            <p className="shrink-0 font-heading text-[13px] font-semibold tabular-nums text-terracotta">
+                            <p className="shrink-0 font-heading text-[12px] font-semibold tabular-nums text-terracotta">
                               $
                               {Number.isInteger(menuItem.price)
                                 ? menuItem.price
@@ -184,6 +201,16 @@ export function DiningSection({
               ))
             )}
           </div>
+        </div>
+
+        <div className="mt-6 rounded-[1.5rem] border border-gold/30 bg-gold/10 px-4 py-3">
+          <p className="font-heading text-[9px] uppercase tracking-caps text-terracotta">
+            Concierge note
+          </p>
+          <p className="mt-1 font-body text-xs italic leading-relaxed text-charcoal-muted">
+            If you are unsure what to choose, ask us what is freshest today. The
+            best meals here often begin with the catch and the weather.
+          </p>
         </div>
 
         <p className="mt-5 text-center font-body text-[10px] italic text-charcoal-muted">
